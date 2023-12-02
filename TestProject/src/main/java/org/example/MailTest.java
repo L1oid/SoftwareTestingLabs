@@ -3,7 +3,6 @@ package org.example;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,7 +11,7 @@ import java.time.Duration;
 
 public class MailTest {
     @Test
-    public void FirstTest() {
+    public void test() {
         String chromeDriverPath = "C:\\Users\\lloid\\Documents\\GitHub\\SoftwareTestingLabs\\TestProject\\drivers\\chromedriver.exe";
         String chromeBinaryPath = "C:\\Users\\lloid\\Desktop\\chrome-win64\\chrome.exe";
 
@@ -23,21 +22,22 @@ public class MailTest {
         System.setProperty("webdriver.chrome.driver",chromeDriverPath); // Установка пути до драйвера
         WebDriver driver = new ChromeDriver(chromeOptions);// Установка заданных опций в WebDriver и его создание
 
-        JavascriptExecutor js = ((JavascriptExecutor) driver); // Подключение JavascriptExecutor для выполнения скролла
-
-        driver.get("https://habr.com/ru/all"); // Переход на сайт habr
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка перед кликом по "Лупе"
-        driver.findElement(By.xpath("//*[@class='tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search tm-header-user-menu__icon_dark']")).click(); // Клик на кнопку "Лупа" для открытия поля поиска
-        Assertions.assertEquals(driver.findElement(By.xpath("//input[@name='q']")), driver.switchTo().activeElement()); // Проверка на то, находится ли поле в фокусе страницы
-        driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Selenium WebDriver"); // Ввод в поле поиска
-        driver.findElement(By.xpath("//*[@class='tm-svg-img tm-svg-icon']")).click(); // Клик на кнопку "Лупа" для поиска
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка перед поиском статьм
-        driver.findElement(By.linkText("Что такое Selenium?")).click(); // Поиск статьи по названию
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка после перехода на страницу статьи
-        Assertions.assertEquals("28 сен 2012 в 17:14", driver.findElement(By.xpath("//*[@title='2012-09-28, 17:14']")).getText()); // Сверка даты
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)"); // Выполнение скролла вниз страницы
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка после скролла
-        driver.findElement(By.xpath("//a[@href='/ru/' and @class='footer-menu__item-link router-link-active']")).click(); // Клик по кнопке "Статьи"
+        driver.get("https://account.mail.ru/login"); // Переход на сайт входа в почту mail.ru
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
+        Assertions.assertEquals(driver.findElement(By.xpath("//input[@name='username']")), driver.switchTo().activeElement()); // Проверка на то, находится ли поле в фокусе страницы
+        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("professionaltester"); // Ввод в поле "Имя аккаунта"
+        driver.findElement(By.xpath("//*[@class='inner-0-2-89 innerTextWrapper-0-2-90']")).click(); // Клик на кнопку "Ввести пароль"
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("toptester123"); // Ввод в поле "Пароль"
+        driver.findElement(By.xpath("//*[@class='inner-0-2-89 innerTextWrapper-0-2-90']")).click(); // Клик на кнопку "Войти"
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
+        driver.findElement(By.xpath("//*[@class='ph-project ph-project__account svelte-1osmzf1']")).click(); // Клик на иконку почты
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
+        Assertions.assertEquals("Тестовый Тестич", driver.findElement(By.xpath("//*[@aria-label='Тестовый Тестич']")).getText()); // Сверка даты
+        driver.findElement(By.xpath("//*[@data-click-counter='75068944']")).click(); // Клик на кнопку "Выйти"
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
+        driver.findElement(By.xpath("//*[@class='resplash-btn resplash-btn_outlined-themed resplash-btn_mailbox-big iimegem-de8k2m']")).isDisplayed(); // Проверка на наличие кнопки "Создать почту"
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
 
         driver.quit();
     }
