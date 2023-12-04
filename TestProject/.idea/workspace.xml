@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc4c397-fae2-4cfb-a07a-c8c67683f103" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HabrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HabrTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MailTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="5fc4c397-fae2-4cfb-a07a-c8c67683f103" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +42,7 @@
     "extract.method.default.visibility": "private",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/lloid/Documents/GitHub/SoftwareTestingLabs/TestProject",
+    "last_opened_file_path": "C:/Users/lloid/Documents/GitHub/AndroidLabs/Lab6/GSON",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -104,6 +100,7 @@
       <workItem from="1701248350977" duration="3059000" />
       <workItem from="1701514686801" duration="2504000" />
       <workItem from="1701517317051" duration="9905000" />
+      <workItem from="1701587000891" duration="10000" />
     </task>
     <servers />
   </component>
