@@ -7,8 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="java-client-4.1.2" level="project" />
-    <orderEntry type="library" name="junit-4.12" level="project" />
-    <orderEntry type="library" name="selenium-server-standalone-3.4.0" level="project" />
+    <orderEntry type="library" name="selenium-server-4.16.0" level="project" />
+    <orderEntry type="library" name="selenium-java-4.15.0" level="project" />
+    <orderEntry type="library" name="java-client-9.0.0" level="project" />
+    <orderEntry type="library" name="junit-4.13.2" level="project" />
   </component>
 </module>
