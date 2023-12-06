@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc4c397-fae2-4cfb-a07a-c8c67683f103" name="Changes" comment="" />
+    <list default="true" id="5fc4c397-fae2-4cfb-a07a-c8c67683f103" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/libraries/java_client_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/libraries/selenium_server_standalone_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/apks/org.wikipedia.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/libs/java-client-4.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/libs/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/libs/selenium-server-standalone-3.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/src/TestSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wikiAppium/wikiAppium.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HabrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HabrTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MailTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,8 +41,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
+    &quot;associatedIndex&quot;: 3
+    }</component>
   <component name="ProjectId" id="2YqLplUEu0L1KLnT3kiNAg3Ahxb" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,11 +62,14 @@
     "extract.method.default.visibility": "private",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/lloid/Documents/GitHub/AndroidLabs/Lab6/GSON",
+    "last_opened_file_path": "C:/Users/lloid/Documents/GitHub/SoftwareTestingLabs/wikiAppium",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }

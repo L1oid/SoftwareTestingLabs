@@ -37,7 +37,7 @@ public class HabrTest {
         Assertions.assertEquals("28 сен 2012 в 17:14", driver.findElement(By.xpath("//*[@title='2012-09-28, 17:14']")).getText()); // Сверка даты
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)"); // Выполнение скролла вниз страницы
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Задержка
-        driver.findElement(By.xpath("//a[@href='/ru/' and @class='footer-menu__item-link router-link-active']")).click(); // Клик по кнопке "Статьи"
+        driver.findElement(By.xpath("//a[@href='/ru/articles/' and @class='footer-menu__item-link router-link-active']")).click(); // Клик по кнопке "Статьи"
 
         driver.quit();
     }
